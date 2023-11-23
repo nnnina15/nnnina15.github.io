@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+.setgap {
+    margin-bottom: 10px;
+}
+
 :root {
     --main-color: #e0e0e0;
 }
@@ -191,4 +195,45 @@ ul {
 
 .taget-infom {
     flex: 3;
+}
+
+.share-item span {
+    display: inline-block;
+
+}
+
+.taget-count span {}
+
+.share-item img {
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+}
+
+.share-item .send-message {
+    border: 1px solid #09aa17;
+    padding: 4px 10px;
+    font-size: 15px;
+}
+
+.share-item .material-symbols-outlined {
+    font-size: 16px;
+    align-items: center;
+}
+
+.copy-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #09aa17;
+    border-radius: 999px;
+}
+
+.share-item {
+    color: #666666;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
 }
