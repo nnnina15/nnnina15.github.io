@@ -1,0 +1,72 @@
+.face {
+    width: 300px;
+    height: 300px;
+    background: #ff6325;
+    position: fixed;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px)
+}
+
+.face .eye {
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    position: absolute;
+    border-radius: 80px;
+    top: 60px;
+    overflow: hidden;
+}
+
+.face .eye.left {
+    left: 40px;
+}
+
+.face .eye.right {
+    right: 40px;
+}
+
+.face .eye .point {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background: #000;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transform: translate(10px);
+    animation-name: point-run;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+
+.face .mouth {
+    width: 120px;
+    height: 60px;
+    position: absolute;
+    bottom: 30px;
+    background-color: #fff;
+    left: 90px;
+    overflow: hidden;
+}
+
+.face .mouth .th {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: red;
+    position: absolute;
+    bottom: -25px;
+    left: 35px;
+}
+
+@keyframes point-run {
+    0% {
+        transform: translate(10px);
+    }
+
+    100% {
+        transform: translate(-10px);
+    }
+}

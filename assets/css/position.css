@@ -1,0 +1,96 @@
+.box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+}
+
+.static {
+    position: static;
+}
+
+
+.relative {
+    position: relative;
+    background: red;
+}
+
+.absolute {
+    position: absolute;
+    background: yellow;
+}
+
+.top {
+    top: 10px;
+}
+
+.re {
+    position: relative;
+    top: 100px;
+    left: 100px;
+    width: 200px;
+    height: 200px;
+    background-color: #dedede;
+}
+
+.ab {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    right: 20px;
+    background: blue;
+}
+
+.fixed {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    right: 20px;
+    background: blue;
+}
+
+.header {
+    position: absolute;
+    background-color: orange;
+    height: 100px;
+    line-height: 100px;
+}
+
+
+.b1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background: #dedede;
+    z-index: 1;
+}
+
+.b2 {
+    position: fixed;
+    top: 52%;
+    left: 52%;
+    width: 100px;
+    height: 100px;
+    background: #d65252;
+    z-index: 1;
+}
+
+
+.b1-1 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: red;
+    z-index: 1;
+}
+
+.b2-2 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: rgb(235, 213, 15);
+    z-index: 3;
+}
