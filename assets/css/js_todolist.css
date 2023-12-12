@@ -1,18 +1,11 @@
-h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.list-input {
+.todo-input {
     display: flex;
     align-items: center;
     margin: 10px auto;
     gap: 10px;
 }
 
-.list-input input {
+.todo-input input {
     height: 50px;
     padding: 10px;
     border: 1px solid #dedede;
@@ -22,27 +15,27 @@ h1 {
     font-size: 1.2rem;
 }
 
-.list-input button {
+.todo-input button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 80px;
     border: 0;
-    border-radius: 50px;
-    background-color: rgb(230, 126, 112);
+    border-radius: 8px;
+    background-color: #1154a1;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     cursor: pointer;
     font-weight: 600;
     letter-spacing: 1px;
 }
 
-.list-input button:hover {
-    background: rgb(224, 155, 146);
+.todo-input button:hover {
+    background: #1f4570;
 }
 
-.list-col {
+.todo-item-wrap {
     margin-top: 10px;
 }
 
@@ -53,17 +46,29 @@ h1 {
     gap: 10px;
 } */
 
-.list-item {
+#todo-item {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
 
-.list-item>li {
+#todo-item>li {
     display: flex;
     align-items: center;
     border: 1px solid #dedede;
     padding: 10px 5px;
     border-radius: 4px;
     gap: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#todo-item>li:hover {
+    background: #3739b3;
+    color: #fff;
+    border-color: #3739b3;
+}
+
+#todo-item>li>input[type=checkbox]:checked+span {
+    text-decoration: line-through;
 }
