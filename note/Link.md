@@ -9,3 +9,5 @@ https://firebase.google.com/
 
 //TEACH GIT
 https://github.com/davidworker/davidworker.github.io
+
+ClOSE CMD = Ctrl+C
