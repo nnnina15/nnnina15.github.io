@@ -11,3 +11,9 @@ https://firebase.google.com/
 https://github.com/davidworker/davidworker.github.io
 
 ClOSE CMD = Ctrl+C
+
+//jQuery 引入
+https://jquery.com/
+
+//下載檔案引入
+https://jquery.com/download/
